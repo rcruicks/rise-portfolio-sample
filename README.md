@@ -37,7 +37,7 @@ Select the `Demo` tab, and double-click on each of the Change (![swap](resources
 ![rise-config](resources/rise-demo-page-setup.png)
 
 ** Warning ** when importing flows that have been exported from working environments,
-the credentials for some nodes need to be re-established - this is likely for the dashDB ![dashDB](resources/dashDB-unconfig.png) nodes; to fix this, all that is required is to
+the credentials for some nodes need to be re-established - this is likely for the dashDB ![dashDB](resources/dashDB-unconfig.png) nodes on the `IBM-Instruments` tab; to fix this, all that is required is to
 double-click on each, wait for the `Service` name to populate with your Db2 Warehouse on Cloud instance name, and then click `Done`.
 
 Then re-Deploy.
@@ -58,3 +58,8 @@ The areas highlighted in red -
 1. this filterable list shows the known financial instruments (stocks) which can be added to the Member's Portfolio. Where known, the links with show current [Markets Insider](http://markets.businessinsider.com/) performance information, as well as the supplied **THEO/value** rate.
 [Barclays plc example](resources/rise-demo-stock-barclays.png)
 1. this is the Chatbot service connected to the Portfolio manager - enter text in the lower entry field, and the responses with scroll in the upper section.
+
+If you click on the _Wallets_ link, you'll find a list of all wallets associated with the demo user. Look for a wallet name that matches your portfolio name - again, probably **P1**. If it doesn't exist, you will find a *Create a new Wallet* link at the bottom of the list - create the new wallet with the same name as your portfolio.
+Reload the wallet list, and click on the *TOPUP* link next to the portfolio wallet; this will allow you to add funds to the wallet (up to 10000 units at a time). The units are currency-independent for demo purposes - there is no currency-conversion performed when "purchasing" shares.
+
+While the *Holdings* link will show the stocks in the portfolio, you can also use the Chatbot dialog to query the portfolio, and ask for projections or advice.
